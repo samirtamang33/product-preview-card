@@ -26,6 +26,11 @@
   --text-preset-2-line: 1.2;
   --text-preset-2-spacing: 0;
 
+  --text-preset-3-font: var(--font-montserrat-bold);
+  --text-preset-3-size: 0.875rem; /* 14px converted to rem */
+  --text-preset-3-line: 1.1;
+  --text-preset-3-spacing: 0;
+
   --text-preset-3-font: var(--font-montserrat-medium);
   --text-preset-3-size: 0.875rem; /* 14px converted to rem */
   --text-preset-3-line: 1.6;

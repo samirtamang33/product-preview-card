@@ -36,10 +36,6 @@
   object-fit: cover;
   object-position: center;
   display: block;
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .content {
@@ -47,7 +43,7 @@
   flex-direction: column;
   width: 100%;
   padding: var(--spacing-400);
-  gap: var(--spacing-200);
+  /* gap: var(--spacing-300); */
 }
 
 .category {
@@ -56,6 +52,7 @@
   font-size: var(--text-preset-4-size);
   line-height: var(--text-preset-4-line);
   letter-spacing: var(--text-preset-4-spacing);
+  margin-bottom: var(--spacing-300);
 }
 
 .title {
@@ -64,7 +61,7 @@
   line-height: var(--text-preset-1-line);
   letter-spacing: var(--text-preset-1-spacing);
   color: var(--color-black);
-  margin: 0;
+  margin-bottom: var(--spacing-300);
 }
 
 .description {
@@ -73,7 +70,7 @@
   line-height: var(--text-preset-3-line);
   letter-spacing: var(--text-preset-3-spacing);
   color: var(--color-grey);
-  margin: 0;
+  margin-bottom: var(--spacing-400);
 }
 
 .priceContainer {
@@ -81,7 +78,7 @@
   flex-direction: row;
   align-items: center;
   gap: var(--spacing-200);
-  margin-top: auto;
+  margin-bottom: var(--spacing-400);
 }
 
 .price {
@@ -107,19 +104,18 @@
   color: var(--color-white);
   border: none;
   border-radius: var(--border-radius);
-  padding: var(--spacing-200);
-  font-family: var(--text-preset-2-font);
-  font-size: var(--text-preset-2-size);
+  padding: var(--spacing-200), var(--spacing-400);
+  font-family: var(--text-preset-6-font);
+  font-size: var(--text-preset-6-size);
   font-weight: 700;
-  line-height: var(--text-preset-2-line);
-  letter-spacing: var(--text-preset-2-spacing);
+  line-height: var(--text-preset-6-line);
   cursor: pointer;
   transition: var(--transition);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--spacing-100);
-  min-height: 3rem; /* Better touch target */
+  min-height: 3.125rem; /* Better touch target */
 }
 
 .addButton:hover {
@@ -158,6 +154,10 @@
   .imageContainer {
     width: 50%;
     height: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .mobileImage {
@@ -170,6 +170,7 @@
 
   .content {
     width: 50%;
+    height: auto;
     padding: var(--spacing-400);
     justify-content: space-between;
   }
@@ -177,8 +178,7 @@
   .priceContainer {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-top: var(--spacing-300);
+    gap: var(--spacing-200);
   }
 }
 
