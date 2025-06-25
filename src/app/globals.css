@@ -26,10 +26,10 @@
   --text-preset-2-line: 1.2;
   --text-preset-2-spacing: 0;
 
-  --text-preset-3-font: var(--font-montserrat-bold);
-  --text-preset-3-size: 0.875rem; /* 14px converted to rem */
-  --text-preset-3-line: 1.1;
-  --text-preset-3-spacing: 0;
+  --text-preset-6-font: var(--font-montserrat-bold);
+  --text-preset-6-size: 0.875rem; /* 14px converted to rem */
+  --text-preset-6-line: 1.1;
+  --text-preset-6-spacing: 0;
 
   --text-preset-3-font: var(--font-montserrat-medium);
   --text-preset-3-size: 0.875rem; /* 14px converted to rem */
@@ -86,23 +86,6 @@ body {
   font-family: var(--font-montserrat-medium);
   line-height: 1.6;
   color: var(--color-black);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Typography improvements */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-p {
-  margin-bottom: 1rem;
 }
 
 /* Link styles */
